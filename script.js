@@ -1,22 +1,135 @@
 // Assignment code here
 
-// Generate 
+// Generate Password Function
+
+function forceLowercase(currentCharacter) {
+  if (currentCharacter === "N") {
+    return 'n';
+  }
+  if (currentCharacter === "Y") {
+    return 'y';
+  }
+}
 
 function generatePassword() {
 
 // Password Length
+passwordLength = 0; 
+do {
+  passwordLength = window.prompt("How long should this password be? (must be between 8-128 characters)")
+}
+while (passwordLength < 8 | passwordLength > 128)
 
 // Character Types
 
-// lowercase
+do {
+  // lowercase
 
-// uppercase
+  passwordLower = "n";
+  do {
+    passwordLower = window.prompt("Include lowercase characters? y or n (must choose at least one type)")
+    passwordLower = forceLowercase(passwordLower);
+  }
+  while (passwordLower != "n" && passwordLower != "y")
+    
+  // uppercase
+  passwordUpper ="n"
+  do {
+    passwordUpper = window.prompt("Include uppercase characters? y or n (must choose at least one type)")
+    passwordUpper = forceLowercase(passwordUpper);
+  }
+  while (passwordUpper != "n" && passwordUpper != "y")
+    
+  // numeric
+  
+  passwordNumeric ="n"
+  do {
+    passwordNumeric = window.prompt("Include numeric characters? y or n (must choose at least one type)")
+    passwordNumeric = forceLowercase(passwordNumeric);
+  }
+  while (passwordNumeric != "n" && passwordNumeric != "y")
+    
+  // special
+  
+  passwordSpecial ="n"
+  do {
+    passwordSpecial = window.prompt("Include special characters? y or n (must choose at least one type)")
+    passwordSpecial = forceLowercase(passwordSpecial);
+  }
+  while (passwordSpecial != "n" && passwordSpecial != "y")
+    
+  // Create Password
 
-// numeric
+  // Build Character Selection String
 
-// special
+  characterSelection = ""
 
-// Create Password
+
+
+  // Lowercase Yes
+
+    // Uppercase Yes
+
+      // Numeric Yes
+
+        // Special Yes
+
+        // Special No
+
+      // Numeric No
+
+        // Special Yes
+
+        // Special No
+
+    // Uppercase No
+
+      // Numeric Yes
+
+        // Special Yes
+
+        // Special No
+
+      // Numeric No
+
+        // Special Yes
+
+        // Special No
+
+  
+  // Lowercase No
+
+    // Uppercase Yes
+
+      // Numeric Yes
+
+        // Special Yes
+
+        // Special No
+
+      // Numeric No
+
+        // Special Yes
+
+        // Special No
+
+    // Uppercase No
+
+      // Numeric Yes
+
+        // Special Yes
+
+        // Special No
+
+      // Numeric No
+
+        // Special Yes
+
+
+}
+while (passwordLower != "y" && passwordUpper != "y" && passwordNumeric != "y" && passwordSpecial != "y")
+
+
 
 
 }
