@@ -11,7 +11,7 @@ Upon clicking the Generate Password button a series of prompts asks the user for
 
 A password is then generated and displayed in the box.
 
-![password-gen.png](./images/passworg-gen.png)
+![password-gen.png](./images/password-gen.png)
 
 Link to deployed website:
 
