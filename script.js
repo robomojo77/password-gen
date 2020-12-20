@@ -1,7 +1,5 @@
 // Assignment code here
 
-// Generate Password Function
-
 // VARIABLES
 
 var passwordLower = "n";
@@ -61,7 +59,7 @@ function generateCharacter() {
   return randomAllowedCharacter;
   }
 
-
+// Generate Password Function
 
 function generatePassword() {
 
@@ -159,13 +157,11 @@ function generatePassword() {
 // Fill remaining character slots
   var remainingSlots = passwordLength - passwordString.length
 
-  console.log(remainingSlots)
-
   for (var i = 0; i < remainingSlots ; i++) {
     let newString = passwordString + generateCharacter();
     passwordString = newString;
   }
-  console.log(allowedCharacters);
+
   return passwordString;
 }
 
